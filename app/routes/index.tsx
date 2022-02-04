@@ -1,9 +1,7 @@
-import Header from "~/components/Header";
-
 export default function Index() {
   return (
     <div className="min-h-screen">
-     <Header></Header>
+     Home page
     </div>
   );
 }
