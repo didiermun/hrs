@@ -8,9 +8,15 @@ module.exports = {
           gray: "#9e9e9e",
         },
         secondary: {
-          DEFAULT:"#de3151"
+          DEFAULT:"#de3151",
+        },
+        light:{
+          DEFAULT:"#4B5563",
         }
       }
+    },
+    fontFamily:{
+      sans: ["Inter","Roboto", "sans-serif"],
     },
     textColor:{
       primary: "#00bcd4",

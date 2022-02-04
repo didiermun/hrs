@@ -28,8 +28,8 @@ export default function Header(){
                                         <path d="M32.0417 31.0416L28.9167 27.9166M19.9583 24.1666C19.9583 21.2901 22.2902 18.9583 25.1667 18.9583C28.0432 18.9583 30.375 21.2901 30.375 24.1666C30.375 27.0431 28.0432 29.3749 25.1667 29.3749C22.2902 29.3749 19.9583 27.0431 19.9583 24.1666Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </g>
                                     <defs>
-                                        <filter id="filter0_d_138_1867" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <filter id="filter0_d_138_1867" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                             <feOffset dy="1"/>
                                             <feGaussianBlur stdDeviation="1"/>
