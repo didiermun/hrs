@@ -11,7 +11,7 @@ import {
 } from "remix";
 
 export const meta: MetaFunction = () => {
-  return { title: "My First Remix + Tailwind Project" };
+  return { title: "Hot Reservation" };
 };
 
 export const links: LinksFunction = () => {
@@ -31,7 +31,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="font-sans">
+      <body className="font-sans bg-white border-box">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

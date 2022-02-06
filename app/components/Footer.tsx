@@ -1,6 +1,6 @@
 export default function Footer(){
     return(
-        <div className="bg-gray-50  px-8 py-4 absolute bottom-0 w-full">
+        <div className="bg-gray-50  px-8 py-4 col-span-2">
             <div className="w-full grid grid-cols-8 border-b-2 pb-4 mb-2">
                 <div className="col-span-2">
                     <h3 className="font-semibold mb-4">Support</h3>
@@ -55,9 +55,9 @@ export default function Footer(){
                     <div className="w-max flex float-right pr-8 gap-10">
                         <div className=" flex gap-0 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.25 12C19.25 16.0041 16.0041 19.25 12 19.25C7.99594 19.25 4.75 16.0041 4.75 12C4.75 7.99594 7.99594 4.75 12 4.75C16.0041 4.75 19.25 7.99594 19.25 12Z" stroke="#4B5563" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15.25 12C15.25 16.5 13.2426 19.25 12 19.25C10.7574 19.25 8.75 16.5 8.75 12C8.75 7.5 10.7574 4.75 12 4.75C13.2426 4.75 15.25 7.5 15.25 12Z" stroke="#4B5563" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M5 12H19" stroke="#4B5563" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.25 12C19.25 16.0041 16.0041 19.25 12 19.25C7.99594 19.25 4.75 16.0041 4.75 12C4.75 7.99594 7.99594 4.75 12 4.75C16.0041 4.75 19.25 7.99594 19.25 12Z" stroke="#4B5563" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M15.25 12C15.25 16.5 13.2426 19.25 12 19.25C10.7574 19.25 8.75 16.5 8.75 12C8.75 7.5 10.7574 4.75 12 4.75C13.2426 4.75 15.25 7.5 15.25 12Z" stroke="#4B5563" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M5 12H19" stroke="#4B5563" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                             <p className="hover:underline">English(US)</p>
                         </div>
