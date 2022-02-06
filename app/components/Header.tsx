@@ -17,9 +17,9 @@ export default function Header(){
                     <div className="rounded-3xl shadow-xl px-3 w-min py-2 flex">
                             <input type="text" className="px-4 py-1 text-gray-800  focus:outline-none border-r-2 border-gray-300"
                                 placeholder="Place"/>
-                            <input type="text" className=" px-4 py-1 text-gray-800  focus:outline-none border-r-2 border-gray-300"
+                            <input type="date" className=" px-4 py-1 text-gray-800  focus:outline-none border-r-2 border-gray-300"
                                 placeholder="Date"/>
-                            <input type="text" className="px-4 py-1 text-gray-800  focus:outline-none"
+                            <input type="number" className="px-4 py-1 text-gray-800  focus:outline-none"
                                 placeholder="Number of guests"/>
                             <div className="w-max">
                                 <svg width="32" height="32" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" className="cursor-pointer">
