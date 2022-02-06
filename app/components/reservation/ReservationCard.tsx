@@ -22,18 +22,18 @@ export default function ReservationCard(){
             </div>
             <div className="rounded-lg border-2  mt-6">
                 <div className="grid grid-cols-2 gap-2 border-b-2 p-2">
-                    <div className="col-span-1 border-r-2 w-48">
+                    <div className="col-span-1 border-r-2 w-48 px-2">
                         <label htmlFor="checkIn" className="uppercase font-semibold">Check-In</label>
-                        <input type="date" id="checkIn" name="checkIn" className="w-full p-2 border-gray-200 rounded-lg" />
+                        <input type="date" id="checkIn" name="checkIn" className="w-full p-2  border-gray-200 rounded-lg focus:bg-white focus:border-2 focus:border-primary focus:outline-none focus:translate-w-20 focus:transition-all" />
                     </div>
                     <div className="col-span-1 w-48">
                         <label htmlFor="checkOut" className="uppercase font-semibold">Check-Out</label>
-                        <input type="date" id="checkOut" name="checkOut" className="w-full p-2 border-gray-200 rounded-lg" />
+                        <input type="date" id="checkOut" name="checkOut" className="w-full p-2  border-gray-200 rounded-lg focus:bg-white focus:border-2 focus:border-primary focus:outline-none focus:translate-w-20 focus:transition-all" />
                     </div>
                 </div>
                 <div className="p-3 flex flex-col gap-2">
                     <label htmlFor="guests" className="uppercase font-semibold">Guests</label>
-                    <select className=" w-full mb-3 font-sans block px-4 py-2 text-xl appearance-none font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label=".form-select-lg example">
+                    <select className=" w-full mb-3 font-sans block px-4 py-2 text-xl appearance-none font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border-2 border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none focus:transition-all">
                         <option selected>--- guests ----</option>
                         <option value="1">1 Guest</option>
                         <option value="2">2 Guests</option>
