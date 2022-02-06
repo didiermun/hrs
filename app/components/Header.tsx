@@ -25,7 +25,7 @@ export default function Header(){
                                 <svg width="32" height="32" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" className="cursor-pointer">
                                     <g filter="url(#filter0_d_138_1867)">
                                         <path d="M2 25C2 11.7452 12.7452 1 26 1C39.2548 1 50 11.7452 50 25C50 38.2548 39.2548 49 26 49C12.7452 49 2 38.2548 2 25Z" fill="#DE3151"/>
-                                        <path d="M32.0417 31.0416L28.9167 27.9166M19.9583 24.1666C19.9583 21.2901 22.2902 18.9583 25.1667 18.9583C28.0432 18.9583 30.375 21.2901 30.375 24.1666C30.375 27.0431 28.0432 29.3749 25.1667 29.3749C22.2902 29.3749 19.9583 27.0431 19.9583 24.1666Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M32.0417 31.0416L28.9167 27.9166M19.9583 24.1666C19.9583 21.2901 22.2902 18.9583 25.1667 18.9583C28.0432 18.9583 30.375 21.2901 30.375 24.1666C30.375 27.0431 28.0432 29.3749 25.1667 29.3749C22.2902 29.3749 19.9583 27.0431 19.9583 24.1666Z" stroke="white" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </g>
                                     <defs>
                                         <filter id="filter0_d_138_1867" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
@@ -46,9 +46,9 @@ export default function Header(){
                 <div className="col-span-1 flex justify-end">
                     <div className="cursor-pointer w-max flex rounded-full px-2 pb-1 py-3 border border-gray-300 item-center">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.75 5.75H19.25" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4.75 18.25H19.25" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4.75 12H19.25" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.75 5.75H19.25" stroke="#111827" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.75 18.25H19.25" stroke="#111827" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.75 12H19.25" stroke="#111827" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
                     <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
