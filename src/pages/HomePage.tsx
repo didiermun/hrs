@@ -1,13 +1,13 @@
 import { useState } from "react";
-import logo from "./logo.svg";
-import poweredBy from "./powered-by-vitawind-dark.png";
+import logo from "../../src/logo.svg"
+import poweredBy from "../../src/powered-by-vitawind-dark.png";
 
-export default function HomePage(){
+const  HomePage = () => {
     const [count, setCount] = useState(0);
     return (
         <div className="text-center selection:bg-green-900">
           <header className="flex min-h-screen flex-col items-center justify-center bg-[#282c34] text-white">
-            <img
+            {/* <img
               src={logo}
               className="animate-speed h-60 motion-safe:animate-spin"
               alt="logo"
@@ -20,7 +20,7 @@ export default function HomePage(){
                 }\
               "
               }
-            </style>
+            </style> */}
             <p className="bg-gradient-to-r from-emerald-300 to-sky-300 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent">
               Vite + React + Typescript + Tailwindcss v3
             </p>
@@ -56,8 +56,9 @@ export default function HomePage(){
                 Vite Docs
               </a>
             </p>
-            <img src={poweredBy} className="mx-auto my-8" alt="powered-by" />
+            {/* <img src={poweredBy} className="mx-auto my-8" alt="powered-by" /> */}
           </header>
         </div>
     )
 }
+export default HomePage

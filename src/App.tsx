@@ -1,18 +1,19 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from "./pages/404";
-import HomePage from "./pages/Home";
+import HomePage from "./pages/HomePage";
 
 export default function App() {
   
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={HomePage}/>
-        <Route component={NotFound} />
+
+ 
+    <Routes> 
         
-      </Switch>
-    </Router>
+          <Route path="*" element={<HomePage/>}/>
+        </Routes>
   );
 }
+
+
