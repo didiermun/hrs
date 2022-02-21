@@ -1,6 +1,6 @@
 import { useState } from "react";
-import logo from "./logo.svg";
-import poweredBy from "./powered-by-vitawind-dark.png";
+import logo from "../logo.svg";
+import poweredBy from "../powered-by-vitawind-dark.png";
 
 export default function HomePage(){
     const [count, setCount] = useState(0);
