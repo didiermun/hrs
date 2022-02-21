@@ -1,7 +1,7 @@
 export default function Navbar(){
     return(
-        <div className="px-4 bg-dark">
-        <div className="w-full bg-white grid grid-cols-4 py-2 pt-4 px-3 mb-6">
+        <div className="px-4 body">
+        <div className="w-full grid grid-cols-4 py-2 pt-4 px-3 mb-6">
             <div className="col-span-1 flex cursor-pointer">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.4975 4.91031L14.4634 5.16913V5.16913L13.4975 4.91031ZM9.88161 18.4049L10.8475 18.6637V18.6637L9.88161 18.4049ZM3.12013 16.5931L4.08605 16.8519L3.12013 16.5931ZM6.73598 3.09858L7.70191 3.35739V3.35739L6.73598 3.09858ZM7.38438 2.72423L7.12556 3.69015V3.69015L7.38438 2.72423ZM13.1231 4.26191L13.3819 3.29599L13.3819 3.29599L13.1231 4.26191ZM12.5315 4.65149L8.91568 18.146L10.8475 18.6637L14.4634 5.16913L12.5315 4.65149ZM4.08605 16.8519L7.70191 3.35739L5.77006 2.83976L2.1542 16.3343L4.08605 16.8519ZM7.12556 3.69015L12.8643 5.22784L13.3819 3.29599L7.6432 1.7583L7.12556 3.69015ZM7.70191 3.35739C7.63464 3.60844 7.3766 3.75742 7.12556 3.69015L7.6432 1.7583C6.82731 1.53968 5.98867 2.02387 5.77006 2.83976L7.70191 3.35739ZM5.85382 19.9138C4.52016 19.5565 3.7287 18.1856 4.08605 16.8519L2.1542 16.3343C1.51096 18.7349 2.93559 21.2024 5.33618 21.8457L5.85382 19.9138ZM8.91568 18.146C8.55833 19.4797 7.18749 20.2712 5.85382 19.9138L5.33618 21.8457C7.73678 22.4889 10.2043 21.0643 10.8475 18.6637L8.91568 18.146ZM14.4634 5.16913C14.682 4.35324 14.1978 3.51461 13.3819 3.29599L12.8643 5.22784C12.6132 5.16057 12.4643 4.90253 12.5315 4.65149L14.4634 5.16913Z" fill="red"/>
@@ -12,14 +12,14 @@ export default function Navbar(){
                 <p className="font-bold text-xl  text-secondary px-1">HotReserve</p>
             </div>
             <div className="flex items-center col-span-2 ">
-                <div className=" ml-8 w-full  flex">
-                        <a  className=" px-4 py-1 text-gray-800  focus:outline-none" href="pablo">Places to stay</a>
-                        <a  className=" px-4 py-1 text-gray-800  focus:outline-none" href="pablo">Experiences</a>
-                        <a  className=" px-4 py-1 text-gray-800  focus:outline-none" href="pablo">Online Experiences</a>
+                <div className=" ml-8 w-full text-white flex">
+                        <a  className=" px-4 py-1 focus:outline-none" href="pablo">Places to stay</a>
+                        <a  className=" px-4 py-1 focus:outline-none" href="pablo">Experiences</a>
+                        <a  className=" px-4 py-1 focus:outline-none" href="pablo">Online Experiences</a>
                 </div>
             </div>
             <div className="col-span-1 flex justify-end gap-3">
-            <h3 className=" item-center mt-3">Become a host</h3>
+            <h3 className=" item-center mt-3 text-white">Become a host</h3>
                 <div className="cursor-pointer w-max flex rounded-full px-2 pb-1 py-3 border border-gray-300 item-center">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.75 5.75H19.25" stroke="#111827" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -39,7 +39,9 @@ export default function Navbar(){
 
                 </div>   
             </div>
+            
         </div>
+        
         
     </div>
     )

@@ -7,10 +7,8 @@ import Navbar from "../components/Navbar";
 const  HomePage = () => {
     const [count, setCount] = useState(0);
     return (
-
-<Navbar/>
-
- 
+   <Navbar/>
+   
     )
 }
 export default HomePage
