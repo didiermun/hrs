@@ -1,40 +1,29 @@
-# Welcome to Remix + Tailwind!
+# template-vite-react-ts-tailwind-v3
 
-- [Remix Docs](https://remix.run/docs)
-- [Tailwind Docs](https://tailwindcss.com/docs)
+- **template of:** vite + react + typescript
+- **tailwindcss:** v3.x
 
-## Development
-
-From your terminal:
-
-```sh
-npm run dev
+## Started
+```bash
+yarn
+# or `npm install`
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
+---
+## Develop
+```bash
+yarn dev
+# or `npm run dev`
 ```
 
-Then run the app in production mode:
-
-```sh
-npm start
+---
+## Build
+```bash
+yarn build
+# or `npm run build`
 ```
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
-
+---
+<p align="center">
+<img src="./powered-by-vitawind-bright.png">
+</p>
