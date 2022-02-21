@@ -1,16 +1,7 @@
 import { useState } from "react";
-<<<<<<< HEAD:src/pages/HomePage.tsx
-<<<<<<< HEAD:src/pages/HomePage.tsx
-import logo from "../../src/logo.svg"
-import poweredBy from "../../src/powered-by-vitawind-dark.png";
-=======
-import logo from "../logo.svg";
-import poweredBy from "../powered-by-vitawind-dark.png";
->>>>>>> 381fe3ddabda1dd727901a7cb8739c71698c5b82:src/pages/Home.tsx
-=======
-import logo from "../logo.svg";
-import poweredBy from "../powered-by-vitawind-dark.png";
->>>>>>> 381fe3ddabda1dd727901a7cb8739c71698c5b82:src/pages/Home.tsx
+
+
+
 
 const  HomePage = () => {
     const [count, setCount] = useState(0);
