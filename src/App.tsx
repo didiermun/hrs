@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from "./pages/404";
-import HomePage from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import Search from "./pages/Search";
 
 export default function App() {
@@ -18,3 +18,5 @@ export default function App() {
     </Router>
   );
 }
+
+
