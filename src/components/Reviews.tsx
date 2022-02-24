@@ -42,7 +42,7 @@ export default function Reviews(){
                         <PTestimonial /> 
                     </div>
                 }
-                <div className="col-span-6">
+                <div className="col-span-6 px-4">
                     <button className="rounded-xl border-2 px-3 py-1 border-black" onClick={()=>{setShowingAll(!showingAll)}}>{showingAll ? 'Hide reviews' : 'Show all 17 reviews' }</button>
                 </div>
             </div>

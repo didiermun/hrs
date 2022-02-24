@@ -1,6 +1,6 @@
 import { useState } from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Reviews from "../components/Reviews";
 
 
 
@@ -10,9 +10,10 @@ const  HomePage = () => {
     return (
     <div className="bg-black">
         <Navbar/>
-        <div className="bg-white px-6 md:px-20">
-        <Reviews/>
+        <div className="bg-white px-6 md:px-20 min-h-screen">
+        
         </div>
+        <Footer/>
     </div>
    
     )
