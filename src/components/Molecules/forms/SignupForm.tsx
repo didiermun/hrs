@@ -1,4 +1,4 @@
-export default function SigninForm(){
+export default function SignupForm(){
 return(
 <div className='flex flex-col gap-2'>
     <div className='w-full flex flex-col gap-0'>

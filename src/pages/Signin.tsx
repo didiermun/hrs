@@ -1,6 +1,6 @@
 import google from '../files/auth/google.svg';
 import facebook from '../files/auth/facebook.svg';
-import SignupForm from '../components/Molecules/forms/SignupForm';
+import SigninForm from '../components/Molecules/forms/SigninForm';
 import { Link } from 'react-router-dom';
 export default function Signup(){
     return (
@@ -10,29 +10,29 @@ export default function Signup(){
                 <p className="text-white text-2xl font-extralight text-center">The right place for you to be on your vacation with the right and affordable cost😛</p>
             </div>
             <div className='col-span-3 bg-white px-3 py-3 flex flex-col gap-8 mx-auto items-center justify-center w-full'>
-                <p className='text-5xl'>Create account</p>
+                <p className='text-5xl'>Login to account</p>
                 <div className='flex gap-4'>
                     <button className='rounded-2xl  shadow-xl px-4 py-2 text-lg'> 
                         <div className='flex gap-3'>
                             <img src={google} alt="" />
-                            <span>Sign up with Google</span>
+                            <span>Login with Google</span>
                         </div>
                     </button>
                     <button className='rounded-2xl  shadow-xl px-4 py-2 text-lg'> 
                         <div className='flex gap-3'>
                             <img src={facebook} alt="" />
-                            <span>Sign up with Facebook</span>
+                            <span>Login with Facebook</span>
                         </div>
                     </button>
                 </div>
                 <div className='flex'>
                     OR
                 </div>
-                <SignupForm/>
+                <SigninForm/>
                 <div className='flex justify-between gap-24'>
-                    <span>Already have an account?</span>
-                    <Link to="/auth/signin">
-                        <span className='text-secondary cursor-pointer font-medium hover:underline transation-all'>Sign in here</span>
+                    <span>Don't have an account yet?</span>
+                    <Link to="/auth/register">
+                        <span className='text-secondary cursor-pointer font-medium hover:underline transation-all'>Sign up here</span>
                     </Link>
                 </div>
             </div>

@@ -21,10 +21,6 @@ module.exports = {
     fontFamily:{
       sans: ["Inter","Roboto", "sans-serif"],
     },
-    textColor:{
-      primary: "#00bcd4",
-      secondary: "#de3151"
-    }
   },
   plugins: [],
 }
