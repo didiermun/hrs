@@ -15,6 +15,9 @@ module.exports = {
         },
         fourth:{
           DEFAULT:"#66DE93",
+        },
+        dark:{
+          DEFAULT:"#374151",
         }
       }
     },
