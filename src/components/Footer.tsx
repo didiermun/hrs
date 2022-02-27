@@ -1,7 +1,7 @@
 export default function Footer(){
     return(
         <div className="bg-gray-50  px-8 py-4 col-span-2">
-            <div className="w-full grid grid-cols-8 border-b-2 pb-4 mb-2">
+            <div className="w-full grid grid-cols-4 md:grid-cols-8 border-b-2 pb-4 mb-2 gap-6 md:gap-0">
                 <div className="col-span-2">
                     <h3 className="font-semibold mb-4">Support</h3>
                     <div className="flex flex-col gap-2">

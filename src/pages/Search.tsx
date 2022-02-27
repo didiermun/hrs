@@ -23,7 +23,7 @@ export default function Search() {
               </div>
             </div>
             <div className="col-span-3 ml-10 mt-10">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.554664049929!2d29.576192250411385!3d-1.442072236217731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dc4fc043a1ba85%3A0x3b64cd66449e625f!2sOne%26Only%20Gorilla&#39;s%20Nest!5e0!3m2!1sen!2srw!4v1645798666858!5m2!1sen!2srw" width="600" height="800"  allowFullScreen={true} loading="lazy"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.554664049929!2d29.576192250411385!3d-1.442072236217731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dc4fc043a1ba85%3A0x3b64cd66449e625f!2sOne%26Only%20Gorilla&#39;s%20Nest!5e0!3m2!1sen!2srw!4v1645798666858!5m2!1sen!2srw" width="600" height="800"  allowFullScreen={true} loading="lazy"></iframe>
             </div>
           </div>
       </div>

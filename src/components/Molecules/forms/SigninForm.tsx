@@ -31,7 +31,7 @@ export default function SignupForm(){
             <input type="password" name="password" onChange={handleChange} required value={user.password} className='w-96 border-2 border-gray-400 rounded-lg px-4 py-2' placeholder='Password' />
         </div>
         <div className='mt-2'>
-            <button className='w-full bg-primary rounded-lg py-2 px-4 text-white'>Login</button>
+            <button className='w-full bg-secondary rounded-lg py-2 px-4 text-white'>Login</button>
         </div>
     
     </form>

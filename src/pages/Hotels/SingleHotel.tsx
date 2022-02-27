@@ -10,12 +10,12 @@ export default function SingleHotel(){
             <Header></Header>
           </div>
           <div className="flex flex-col px-12">
-            <div className="bg-white px-4 py-10 h-full w-full">
+            <div className="bg-white md:px-4 py-10 h-full w-full">
                 <div className="flex float-right">
                 <ReservationCard></ReservationCard>
                 </div>
             </div>
-            <div className="w-full px-6">
+            <div className="w-full px-2 md:px-6">
                 <Reviews/>
             </div>
           </div>
