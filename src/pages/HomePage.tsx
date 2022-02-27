@@ -12,7 +12,7 @@ const  HomePage = () => {
         <Navbar/>
         <div className="bg-white px-6 md:px-20 min-h-screen flex flex-col items-center mx-auto justify-center">
             <p>Count is {count}</p>
-            <button className="rounded-lg  bg-red-500 py-2 px-4 text-white" onClick={()=>{setCount(count+1)}}>Update count</button>
+            <button className="rounded-lg  bg-secondary py-2 px-4 text-white" onClick={()=>{setCount(count+1)}}>Update count</button>
         
         </div>
         <Footer/>

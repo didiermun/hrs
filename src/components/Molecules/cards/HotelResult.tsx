@@ -1,3 +1,5 @@
+import toast from "react-hot-toast"
+import { Link } from "react-router-dom"
 import like from "../../../files/like.svg"
 import star from "../../../files/star.svg"
 export default function HotelResult(){
@@ -10,9 +12,11 @@ export default function HotelResult(){
                 <div className="flex justify-between">
                     <div className="flex flex-col gap-2 w-max">
                         <span className="text-gray-500">Entire home in Nairobi</span>
+                        <Link to="/hotel/34">
                         <p className="font-semibold text-dark">Nairobi Prime Hotel</p>
+                        </Link>
                     </div>
-                    <div className="w-max">
+                    <div className="w-max" onClick={()=>{toast.success("Hotel starred👍")}}>
                         <img src={like} alt="" />
                     </div>
                 </div>
