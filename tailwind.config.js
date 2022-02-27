@@ -13,7 +13,7 @@ module.exports = {
         tertiary:{
           DEFAULT:"#FFEAC9",
         },
-        fourth:{
+        success:{
           DEFAULT:"#66DE93",
         },
         dark:{

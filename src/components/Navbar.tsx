@@ -12,9 +12,16 @@ return(
         </Link>
         <div className="flex items-center col-span-2 ">
             <div className=" ml-8 w-full text-white flex">
-                <a className=" px-4 py-1 focus:outline-none border-b" href="pablo">Places to stay</a>
-                <a className=" px-4 py-1 focus:outline-none" href="pablo">Experiences</a>
-                <a className=" px-4 py-1 focus:outline-none" href="pablo">Online Experiences</a>
+                <Link to="/places">
+                    <p className=" px-4 py-1 focus:outline-none border-b">Places to stay</p>
+                </Link>
+                <Link to="/experiences">
+                    <p className=" px-4 py-1 focus:outline-none">Experiences</p>
+                </Link>
+
+                <Link to="/experiences">
+                    <a className=" px-4 py-1 focus:outline-none">Online Experiences</a>
+                </Link>
             </div>
         </div>
 
