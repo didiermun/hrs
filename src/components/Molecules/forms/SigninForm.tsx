@@ -9,7 +9,7 @@ export default function SignupForm(){
         e.preventDefault();
     
         toast.success("Login successful🥳");
-        navigate('/');
+        navigate('/dashboard');
         console.log(user);
     }
     

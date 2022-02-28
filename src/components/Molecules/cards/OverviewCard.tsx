@@ -14,7 +14,7 @@ return(
         <p className="text-dark">567 Reservations</p>
         <div className="flex gap-2">
             <span className="text-dark">+0.8%</span>
-            <img src={up} alt="" />
+            <img src={up} className="h-4 w-4" alt="" />
         </div>
     </div>
 </div>
