@@ -8,6 +8,11 @@ export interface LoginInfo {
     password: string;
 }
 
+export interface Link{
+    name: string;
+    to: string;
+}
+
 export interface Response<T = unknown> {
     academy: any;
     data: T;
