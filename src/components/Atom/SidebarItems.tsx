@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
+import { ReactSVG } from 'react-svg';
 import { Color, colorStyleType } from '../../types/icon';
 
 export type linkProps = {
     name: string;
     to: string;
     icon: string;
-    fill?: boolean;
+    fill?: Color;
     active?: boolean;
+    size?: number;
 };
 type IProps = {
     name: string;
@@ -21,12 +23,8 @@ type IProps = {
 };
 
 const iconStyle: colorStyleType = {
-    primary: '#0D4B44',
-    error: '#EF4444',
-    warning: '#FACD23',
-    main: '#FFF',
-    success: '#3CD278',
-    'txt-secondary': '#949ca5',
+    primary: '#D83A56',
+    success: '#66DE93',
 };
 
 export type sidebarLinksProps = {
@@ -55,16 +53,26 @@ export function SidebarItem({
     name,
     to,
     icon,
+    size = 24,
     active,
-    fill = true,
+    fill = 'none',
   }: linkProps){
     return (
-        <div  className='flex gap-4 px-3 cursor-pointer py-2 border-l-4 border-primary bg-red-50'>
-        <Link to={to}>
-            <img src={`/icons/${name.toLocaleLowerCase()}.svg`} className="h-6" alt="logo" />
-            <span className={`text-lg `+active ? 'text-secondary': ''}>{name}</span>
-        </Link>
-    </div>
+      <Link to={to}>
+        <div  className={`flex gap-4 px-3 cursor-pointer py-3  border-l-4 ${active ? 'border-primary bg-red-50':'border-transparent'}`}>
+        
+            {/* <img src={`/icons/${icon}.svg`} className="h-6" alt="logo" /> */}
+            <StyledSVGIcon
+              src={`/icons/${icon}.svg`}
+              stroke={ active ? 'primary' : ''}
+              // transform={transform}
+              fill={active ? 'primary' : ''}
+              size={size}
+            />
+            <span className={`text-lg font-light ${active ? 'text-secondary': ''}`}>{name}</span>
+        
+        </div>
+    </Link>
     )
 }
 
@@ -97,7 +105,3 @@ const StyledSVGIcon = styled(ReactSVG)`
     }
   }
 `;
-
-function ReactSVG(ReactSVG: any) {
-    throw new Error("Function not implemented.");
-}

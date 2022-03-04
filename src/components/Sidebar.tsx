@@ -1,12 +1,7 @@
 import logo from '../files/logo.svg'
-import overview from '../files/dashboard/sidebar/overview.svg'
 import booking from '../files/dashboard/sidebar/booking.svg'
-import room from '../files/dashboard/sidebar/room.svg'
-import transaction from '../files/dashboard/sidebar/transaction.svg'
 import settings from '../files/dashboard/sidebar/settings.svg'
-import customer from '../files/dashboard/sidebar/customer.svg'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { Link } from '../types/global'
 import SidebarItems, { linkProps } from './Atom/SidebarItems'
 export default function Sidebar() {
     const links: linkProps[] = [
@@ -17,7 +12,7 @@ export default function Sidebar() {
         },
         {
             name: 'Bookings',
-            to: '/dashboard/booking',
+            to: '/dashboard/bookings',
             icon: 'booking',
         },
         {
@@ -27,7 +22,7 @@ export default function Sidebar() {
         },
         {
             name: 'Transactions',
-            to: '/dashboard/transactions',
+            to: '/dashboard/logs',
             icon: 'transaction',
         },
         {

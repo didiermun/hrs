@@ -7,6 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.24",
     "axios": "0.25.0",
     "csstype": "^3.0.10",
     "react": "^17.0.2",
@@ -16,6 +17,7 @@
     "react-query": "3.34.11",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
+    "react-svg": "^14.1.12",
     "styled-components": "^5.3.3",
     "vitawind": "^2.0.0"
   },

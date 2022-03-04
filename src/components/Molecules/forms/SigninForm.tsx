@@ -11,7 +11,7 @@ export default function SignupForm(){
         e.preventDefault();
     
         toast.success("Login successful🥳");
-        navigate('/dashboard');
+        navigate('/dashboard/overview');
         console.log(user);
     }
     

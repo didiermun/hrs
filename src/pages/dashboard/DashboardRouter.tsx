@@ -12,7 +12,7 @@ export default function DashboardRouter(){
     return(
         <div className="flex">
                 <Routes>
-                    <Route  path={`/`}  element={<IndexDashboard />} />
+                    <Route  path={`/overview`}  element={<IndexDashboard />} />
                     <Route  path={`/bookings`}  element={<Bookings />} />
                     <Route path={`/rooms`} element={<Rooms/>}/>
                     <Route path={`/customers`} element={<Customers/>}/>
