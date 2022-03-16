@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes,useLocation  } from 'react-router-dom';
 import Bookings from './Bookings';
 import Customers from './Customers';
-import IndexDashboard from './IndexDashboard';
+import IndexDashboard from './Dashboard';
 import NotFoundDashboard from './NotFoundDashboard';
 import Rooms from './Rooms';
 import Settings from './Settings';
