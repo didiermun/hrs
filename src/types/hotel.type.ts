@@ -16,7 +16,16 @@ export interface Room {
 
 export interface CreateRoom {
     name: string;
+    description: string;
     primary_photo: string;
     other_photos: string[];
     hotel_id: number;
+}
+
+export interface CreateHotel{
+    name: string;
+    description: string;
+    primary_photo: string;
+    other_photos: string[];
+    owner_id: number;
 }
