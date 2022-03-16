@@ -2,7 +2,7 @@ import Booking from "../../components/Molecules/cards/Booking"
 import BookingTitle from "../../components/Molecules/cards/BookingTitle"
 import AdminLayout from "../../layout/AdminLayout"
 
-export default function Dashboard(){
+export default function Bookings(){
     return (
         <AdminLayout>
             <div className="w-full bg-[#F7F8FC]">
