@@ -18,7 +18,7 @@ export default function AdminLayout({children}: IProps){
                     </div>
                     <ProfileCard/>
                 </div>
-                <div className="flex px-4 w-max h-max">
+                <div className="w-full flex px-4 h-max">
                 {children}
                 </div>
             </div>

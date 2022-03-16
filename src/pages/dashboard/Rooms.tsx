@@ -1,7 +1,8 @@
+import CreateRowButton from "../../components/Molecules/cards/room/CreateRoomButton"
 import Room from "../../components/Molecules/cards/room/Room"
 import AdminLayout from "../../layout/AdminLayout"
 
-export default function Dashboard(){
+export default function Rooms(){
     return (
         <AdminLayout>
             <div className="w-full bg-[#F7F8FC]">
@@ -10,6 +11,7 @@ export default function Dashboard(){
                 </div>
                 <div className="w-full flex flex-col mx-auto py-10 px-4">
                     <div className="w-full gap-4 grid grid-cols-6 lg:grid-cols-9">
+                        <CreateRowButton/>
                         <Room/>
                         <Room/>
                         <Room/>

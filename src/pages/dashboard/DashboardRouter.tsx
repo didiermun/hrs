@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes,useLocation  } from 'react-router-dom';
+import NewRoom from '../../components/Molecules/forms/NewRoom';
 import Bookings from './Bookings';
 import Customers from './Customers';
 import IndexDashboard from './Dashboard';
@@ -15,6 +16,7 @@ export default function DashboardRouter(){
                     <Route  path={`/overview`}  element={<IndexDashboard />} />
                     <Route  path={`/bookings`}  element={<Bookings />} />
                     <Route path={`/rooms`} element={<Rooms/>}/>
+                    <Route path={`/rooms/new`} element={<NewRoom/>}/>
                     <Route path={`/customers`} element={<Customers/>}/>
                     <Route path={`/logs`} element={<Transactions/>}/>
                     <Route path={`/settings/*`} element={<Settings/>}/>

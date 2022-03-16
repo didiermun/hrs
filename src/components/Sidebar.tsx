@@ -11,6 +11,11 @@ export default function Sidebar() {
             icon: 'overview',
         },
         {
+            name: 'Hotel',
+            to: '/dashboard/hotel',
+            icon: 'room',
+        },
+        {
             name: 'Rooms',
             to: '/dashboard/rooms',
             icon: 'room',
