@@ -29,3 +29,14 @@ export interface CreateHotel{
     other_photos: string[];
     owner_id: number;
 }
+
+export interface CreateThingToKnow{
+    hotel_id: number;
+    text: string;
+    type: string;
+}
+
+export interface CreateHotelOffer{
+    hotel_id: number;
+    offer: string;
+}
