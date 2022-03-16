@@ -1,10 +1,16 @@
 
+import { useState } from "react"
+import Modal from "../../components/Modal"
 import NewHotel from "../../components/Molecules/forms/NewHotel"
 import NewOffer from "../../components/Molecules/forms/NewOffer"
 import NewThingToKnow from "../../components/Molecules/forms/NewThing"
 import AdminLayout from "../../layout/AdminLayout"
 
 export default function Dashboard(){
+    const [isNewThingOpen, setIsNewThingOpen] = useState<boolean>(true)
+    const setOpenNewThing = () => {
+        setIsNewThingOpen(!isNewThingOpen)
+    }
     return (
         <AdminLayout>
             <div className="w-full bg-[#F7F8FC]">
@@ -15,7 +21,11 @@ export default function Dashboard(){
                         <NewOffer/>
                     </div>   
                 </div>
+                <Modal isOpen={isNewThingOpen} setClose={setOpenNewThing}>
+                    <NewThingToKnow />
+                </Modal>
             </div>
+            {/* <ReactModal isOpen={true} parentSelector={() => document.querySelector('#root')}></ReactModal> */}
         </AdminLayout>
     )
 }

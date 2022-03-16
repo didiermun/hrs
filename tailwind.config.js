@@ -1,6 +1,10 @@
 module.exports = {
   content: ['index.html','./src/**/*.{js,jsx,ts,tsx,vue,html}'],
   theme: {
+    backgroundColor: (theme) => ({
+      ...theme('colors'),
+      overLay: 'rgba(0, 0, 0, 0.8)',
+    }),
     extend: {
       colors: {
         primary: {
