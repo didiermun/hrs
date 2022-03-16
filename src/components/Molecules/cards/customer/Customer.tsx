@@ -1,4 +1,4 @@
-import more from "../../../files/dashboard/more.svg"
+import more from "../../../../files/dashboard/more.svg"
 
 export default function Customer(){
     return (

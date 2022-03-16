@@ -11,14 +11,19 @@ export default function Sidebar() {
             icon: 'overview',
         },
         {
-            name: 'Bookings',
-            to: '/dashboard/bookings',
-            icon: 'booking',
-        },
-        {
             name: 'Rooms',
             to: '/dashboard/rooms',
             icon: 'room',
+        },
+        {
+            name: 'Customers',
+            to: '/dashboard/customers',
+            icon: 'customer',
+        },
+        {
+            name: 'Bookings',
+            to: '/dashboard/bookings',
+            icon: 'booking',
         },
         {
             name: 'Transactions',
@@ -29,11 +34,6 @@ export default function Sidebar() {
             name: 'Settings',
             to: '/dashboard/settings',
             icon: 'settings',
-        },
-        {
-            name: 'Customers',
-            to: '/dashboard/customers',
-            icon: 'customer',
         },
         {
             name: 'Logout',

@@ -1,4 +1,4 @@
-import Room from "../../components/Molecules/cards/Room"
+import Room from "../../components/Molecules/cards/room/Room"
 import AdminLayout from "../../layout/AdminLayout"
 
 export default function Dashboard(){
