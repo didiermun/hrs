@@ -1,6 +1,10 @@
 import Button from "../../../Atom/Button";
 
-export default function Room(){
+type RoomProps = {
+    deleteAction: (id: number)=> void;
+}
+
+export default function Room({deleteAction}: RoomProps){
     return (
         <div className="col-span-3  flex flex-col gap-8 rounded-lg bg-white  px-6 py-4 cursor-pointer transition hover:scale-90 duration-500 ease-in-out">
             <div className="w-full flex">
@@ -12,7 +16,7 @@ export default function Room(){
             </div>
             <div className="flex justify-center gap-4">
                 <Button>Edit room</Button>
-                <Button className="bg-primary">Delete room</Button>
+                <Button className="bg-primary" onClick={()=>deleteAction(1)}>Delete room</Button>
             </div>
         </div>
     )

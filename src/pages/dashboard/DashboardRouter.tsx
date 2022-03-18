@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Route, Routes,useLocation  } from 'react-router-dom';
-import NewRoom from '../../components/NewRoom';
+import { Route, Routes  } from 'react-router-dom';
 import Bookings from './Bookings';
 import Customers from './Customers';
 import IndexDashboard from './Dashboard';
@@ -10,14 +9,12 @@ import Settings from './Settings';
 import Transactions from './Transactions';
 
 export default function DashboardRouter(){
-    const location = useLocation();
     return(
         <div className="flex">
                 <Routes>
                     <Route  path={`/overview`}  element={<IndexDashboard />} />
                     <Route  path={`/bookings`}  element={<Bookings />} />
                     <Route path={`/rooms`} element={<Rooms/>}/>
-                    <Route path={`/rooms/new`} element={<NewRoom/>}/>
                     <Route path={`/customers`} element={<Customers/>}/>
                     <Route path={`/hotel`} element={<HotelDetails/>}/>
                     <Route path={`/logs`} element={<Transactions/>}/>

@@ -1,10 +1,10 @@
 import { MouseEventHandler } from "react";
 
-export type InputProps = {
+export type ButtonProps = {
     onClick?: (MouseEventHandler<HTMLDivElement> | undefined); 
 }
 
-export default function CreateRowButton({onClick}:InputProps){
+export default function CreateRowButton({onClick}:ButtonProps){
     return (
         <div className="col-span-3  gap-8 rounded-lg bg-white  px-6 py-4 cursor-pointer transition hover:scale-90 duration-500 ease-in-out">
 
