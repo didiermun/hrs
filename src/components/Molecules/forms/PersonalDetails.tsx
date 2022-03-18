@@ -65,9 +65,9 @@ export default function PersonalDetails() {
             htmlFor="username"
             className="text-dark font-medium w-full md:w-60 lg:w-80"
           >
-            Website
+            Email
           </label>
-          <Input className="sm:w-96" name="website"></Input>
+          <Input className="sm:w-96" name="email" type="email"></Input>
         </div>
       </div>
     </div>

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Button from "../../components/Atom/Button";
+import Input from "../../components/Atom/Input";
+import { PasswordSettings } from "../../components/Molecules/forms/PasswordSettings";
 import PersonalDetails from "../../components/Molecules/forms/PersonalDetails"
+import ProfileSettings from "../../components/Molecules/forms/ProfileSettings";
 import AdminLayout from "../../layout/AdminLayout"
 export default function Settings(){
     const [state, setState] = useState(0);
@@ -21,12 +24,12 @@ export default function Settings(){
                     : state == 1?
                         ProfileSettings()
                     : 
-                        <div></div>
+                        PasswordSettings()
                 }
-                <div></div>
             </div>
         </AdminLayout>
     )
 }
+
 
 
