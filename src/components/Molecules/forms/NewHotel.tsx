@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
+import toast from "react-hot-toast";
 import { CreateHotel } from "../../../types/hotel.type";
 import Button from "../../Atom/Button";
 import Input from "../../Atom/Input";
 
-export default function NewHotel(){
+export type NewHotelProps = {
+    onClose: () => void; 
+}
+
+export default function NewHotel({onClose}: NewHotelProps){
     
     const [hotel, setHotel] = useState<CreateHotel>({
         name: '',
@@ -13,11 +18,19 @@ export default function NewHotel(){
         other_photos: [],
     });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    function submitForm(e: FormEvent) {
+        e.preventDefault();
+    
+        toast.success("Hotel created successfully 🔥🔥");
+        console.log(hotel);
+        onClose()
+    }
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setHotel({...hotel, [e.target.name] : e.target.value})
     }
     return (
-               <div className="bg-white px-4 py-6 rounded-lg w-fit">
+               <form className="bg-white px-4 py-6 rounded-lg w-fit" onSubmit={submitForm}>
                     <h1 className="font-semibold px-10 text-2xl w-96">Create Hotel</h1>
 
                     <div className="flex flex-col mt-12 px-10 mb-4 gap-4">
@@ -27,7 +40,7 @@ export default function NewHotel(){
                         </div>
                         <div className='w-full flex flex-col'>
                             <label htmlFor="" className='text-md py-2'>Hotel Name</label>
-                            <textarea type="text" name="description" onChange={handleChange} required value={hotel.description} className='w-96 px-4 h-24 border-gray-400 py-2 border-2 rounded focus:ring-2 focus:ring-black focus:border-0 focus:outline-none' placeholder='description'> </textarea>
+                            <textarea name="description" onChange={handleChange} required value={hotel.description} className='w-96 px-4 h-24 border-gray-400 py-2 border-2 rounded focus:ring-2 focus:ring-black focus:border-0 focus:outline-none' placeholder='description'> </textarea>
                         </div>
                         <div className='w-full flex flex-col'>
                             <label htmlFor="" className='text-md py-2'>Background Photo</label>
@@ -62,9 +75,9 @@ export default function NewHotel(){
                             </div>
                         </div>
                         <div className='w-full flex flex-col mt-3'>
-                            <Button>Save</Button>
+                            <Button type="submit">Save</Button>
                         </div>
                     </div>
-               </div>
+               </form>
     )
 }
