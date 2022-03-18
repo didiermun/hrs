@@ -1,8 +1,15 @@
+import { useState } from "react"
+import Modal from "../../components/Modal"
 import CreateRowButton from "../../components/Molecules/cards/room/CreateRoomButton"
 import Room from "../../components/Molecules/cards/room/Room"
+import NewRoom from "../../components/NewRoom"
 import AdminLayout from "../../layout/AdminLayout"
 
 export default function Rooms(){
+    const [newRoomOpen, setNewRoomOpen] = useState<boolean>(false)
+    const newRoomStatus = () => {
+        setNewRoomOpen(!newRoomOpen)
+    }
     return (
         <AdminLayout>
             <div className="w-full bg-[#F7F8FC]">
@@ -11,7 +18,7 @@ export default function Rooms(){
                 </div>
                 <div className="w-full flex flex-col mx-auto py-10 px-4">
                     <div className="w-full gap-4 grid grid-cols-6 lg:grid-cols-9">
-                        <CreateRowButton/>
+                        <CreateRowButton onClick={newRoomStatus}/>
                         <Room/>
                         <Room/>
                         <Room/>
@@ -20,7 +27,9 @@ export default function Rooms(){
                         <Room/>
                         <Room/>
                     </div>
-                    
+                    <Modal isOpen={newRoomOpen} setClose={newRoomStatus}>
+                        <NewRoom />
+                    </Modal>
                 </div>
             </div>
         </AdminLayout>

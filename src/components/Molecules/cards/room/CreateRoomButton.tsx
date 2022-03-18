@@ -1,11 +1,14 @@
-import { useNavigate } from "react-router";
+import { MouseEventHandler } from "react";
 
-export default function CreateRowButton(){
-    const navigate = useNavigate();
+export type InputProps = {
+    onClick?: (MouseEventHandler<HTMLDivElement> | undefined); 
+}
+
+export default function CreateRowButton({onClick}:InputProps){
     return (
         <div className="col-span-3  gap-8 rounded-lg bg-white  px-6 py-4 cursor-pointer transition hover:scale-90 duration-500 ease-in-out">
 
-            <div className="h-full flex mx-auto items-center justify-center" onClick={()=>navigate('/dashboard/rooms/new')}>
+            <div className="h-full flex mx-auto items-center justify-center" onClick={onClick}>
                 <div className="flex flex-col gap-1">
                     <div className="px-12 py-8 rounded border-2 border-gray-300 border-dashed">
                         <img className="h-7" src={"/icons/add.svg"} alt="" />

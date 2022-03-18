@@ -1,5 +1,4 @@
 import { useState } from "react";
-import AdminLayout from "../layout/AdminLayout";
 import { CreateRoom } from "../types/hotel.type";
 import Button from "./Atom/Button";
 import Input from "./Atom/Input";
@@ -14,13 +13,11 @@ export default function NewRoom(){
         other_photos: []
     });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setRoom({...room, [e.target.name] : e.target.value})
     }
     return (
-        <AdminLayout>
-            <div className="w-full bg-[#F7F8FC] flex justify-center gap-4">
-               <div className="bg-white px-4 py-6 rounded-lg">
+        <div className="bg-white px-4 py-6 rounded-lg">
                     <h1 className="font-semibold px-10 text-2xl w-96">Create New Room</h1>
 
                     <div className="flex flex-col mt-12 px-10 mb-4 gap-4">
@@ -30,7 +27,7 @@ export default function NewRoom(){
                         </div>
                         <div className='w-full flex flex-col'>
                             <label htmlFor="" className='text-md py-2'>Hotel Name</label>
-                            <textarea type="text" name="description" onChange={handleChange} required value={room.description} className='w-96 px-4 h-24 border-gray-400 py-2 border-2 rounded focus:ring-2 focus:ring-black focus:border-0 focus:outline-none' placeholder='description'> </textarea>
+                            <textarea name="description" onChange={handleChange} required value={room.description} className='w-96 px-4 h-24 border-gray-400 py-2 border-2 rounded focus:ring-2 focus:ring-black focus:border-0 focus:outline-none' placeholder='description'> </textarea>
                         </div>
                         <div className='w-full flex flex-col'>
                             <label htmlFor="" className='text-md py-2'>Background Photo</label>
@@ -69,7 +66,5 @@ export default function NewRoom(){
                         </div>
                     </div>
                </div>
-            </div>
-        </AdminLayout>
     )
 }

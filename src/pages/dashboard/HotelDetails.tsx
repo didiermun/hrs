@@ -25,7 +25,6 @@ export default function Dashboard(){
                     <NewThingToKnow />
                 </Modal>
             </div>
-            {/* <ReactModal isOpen={true} parentSelector={() => document.querySelector('#root')}></ReactModal> */}
         </AdminLayout>
     )
 }
