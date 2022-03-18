@@ -22,7 +22,7 @@ export default function Modal({
     children: JSX.Element
     setClose: () => void
 }): JSX.Element {
-    if (!isOpen) return null
+    if (!isOpen) return <></>
     return (
         <ClientPortal>
             <div className="fixed top-0 bottom-0 left-0 right-0 z-20 bg-overLay">
