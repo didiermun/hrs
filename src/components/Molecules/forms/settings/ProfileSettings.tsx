@@ -1,4 +1,4 @@
-import Button from "../../Atom/Button";
+import Button from "../../../Atom/Button";
 
 export default function ProfileSettings() {
   return (

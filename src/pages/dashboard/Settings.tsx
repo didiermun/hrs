@@ -1,9 +1,7 @@
 import { useState } from "react";
-import Button from "../../components/Atom/Button";
-import Input from "../../components/Atom/Input";
-import { PasswordSettings } from "../../components/Molecules/forms/PasswordSettings";
-import PersonalDetails from "../../components/Molecules/forms/PersonalDetails"
-import ProfileSettings from "../../components/Molecules/forms/ProfileSettings";
+import { PasswordSettings } from "../../components/Molecules/forms/settings/PasswordSettings";
+import PersonalDetails from "../../components/Molecules/forms/settings/PersonalDetails"
+import ProfileSettings from "../../components/Molecules/forms/settings/ProfileSettings";
 import AdminLayout from "../../layout/AdminLayout"
 export default function Settings(){
     const [state, setState] = useState(0);
@@ -20,11 +18,11 @@ export default function Settings(){
                 </div>
                 {
                     state == 0 ? 
-                        PersonalDetails()
-                    : state == 1?
-                        ProfileSettings()
+                        <PersonalDetails/>
+                    : state == 1 ?
+                        <ProfileSettings/>
                     : 
-                        PasswordSettings()
+                        <PasswordSettings/>
                 }
             </div>
         </AdminLayout>
