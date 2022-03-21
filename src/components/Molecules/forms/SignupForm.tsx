@@ -24,7 +24,7 @@ export default function SignupForm(){
         setUser({...user, [e.target.name] : e.target.value})
     }
 return(
-<form className='flex flex-col gap-2' onSubmit={submitForm}>
+<form className='flex flex-col gap-2 w-4/5 sm:w-3/5' onSubmit={submitForm}>
     <div className='w-full flex flex-col gap-0'>
         <label htmlFor="" className='text-md py-2'>Full Names</label>
         <Input type="text" name="full_names" onChange={handleChange} required value={user.full_names} placeholder='Full Names' className='w-96'/>
