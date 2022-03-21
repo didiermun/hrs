@@ -6,7 +6,7 @@ export function ClientPortal({ children }: { children: JSX.Element }): ReactPort
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
-        ref.current = document.querySelector('#modal')
+        ref.current = document.querySelector('#modal') || null;
         setMounted(true)
     }, [])
 
